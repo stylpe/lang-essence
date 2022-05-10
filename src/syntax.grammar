@@ -16,7 +16,7 @@ expression {
 
   Boolean { "#t" | "#f" }
 
-  LineComment { ";" ![\n]* }
+  LineComment { "$" ![\n]* }
 
   space { $[ \t\n\r]+ }
 

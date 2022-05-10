@@ -39,3 +39,17 @@ Program(Application(
   Application(Identifier, Boolean, Application(
     Identifier, Application(Identifier, String, String, String)))
   Application(Identifier, String)))
+
+# LineComments
+
+bla
+$bla
+$ bla
+$$bla
+$$ bla
+$ $ bla
+bla
+
+==>
+
+Program(Identifier, LineComment, LineComment, LineComment, LineComment, LineComment, Identifier)

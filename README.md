@@ -1,21 +1,26 @@
-# CodeMirror 6 language package template
+# [Essence](https://conjure.readthedocs.io/en/latest/essence.html) language package for [CodeMirror 6](https://codemirror.net/6/)
 
-This is an example repository containing a minimal [CodeMirror](https://codemirror.net/6/) language support package. The idea is to clone it, rename it, and edit it to create support for a new language.
+On [GitHub](https://github.com/stylpe/lang-essence) and [Replit](https://replit.com/@SuperMikal/codemirror-lang-essence)
 
-Things you'll need to do (see the [language support example](https://codemirror.net/6/examples/lang-package/) for a more detailed tutorial):
+From the abstract of the original [paper defining Essence](https://doi.org/10.1007/s10601-008-9047-y):
 
- * `git grep EXAMPLE` and replace all instances with your language name.
+> Essence is a formal language for specifying combinatorial problems in a manner similar to natural rigorous specifications that use a mixture of natural language and discrete mathematics. Essence provides a high level of abstraction, much of which is the consequence of the provision of decision variables whose values can be combinatorial objects, such as tuples, sets, multisets, relations, partitions and functions. Essence also allows these combinatorial objects to be nested to arbitrary depth, providing for example sets of partitions, sets of sets of partitions, and so forth. Therefore, a problem that requires finding a complex combinatorial object can be specified directly by using a decision variable whose type is precisely that combinatorial object.
 
- * Rewrite the grammar in `src/syntax.grammar` to cover your language. See the [Lezer system guide](https://lezer.codemirror.net/docs/guide/#writing-a-grammar) for information on this file format.
+## TODO
+(see the [language support example](https://codemirror.net/6/examples/lang-package/) for a more detailed tutorial):
 
- * Adjust the metadata in `src/index.ts` to work with your new grammar.
+ * [x] `git grep EXAMPLE` and replace all instances with your language name.
 
- * Adjust the grammar tests in `test/cases.txt`.
+ * [ ] Rewrite the grammar in `src/syntax.grammar` to cover your language. See the [Lezer system guide](https://lezer.codemirror.net/docs/guide/#writing-a-grammar) for information on this file format.
 
- * Build (`npm run prepare`) and test (`npm test`).
+ * [ ] Adjust the metadata in `src/index.ts` to work with your new grammar.
 
- * Rewrite this readme file.
+ * [ ] Adjust the grammar tests in `test/cases.txt`.
 
- * Optionally add a license.
+ * [ ] Build (`npm run prepare`) and test (`npm test`).
 
- * Publish. If you want to use a `@codemirror/lang-...` package name, open an [issue](https://github.com/codemirror/codemirror.next/issues) to ask for npm publish rights for that name.
+ * [x] Rewrite this readme file.
+
+ * [ ] Optionally add a license.
+
+ * [ ] Publish. If you want to use a `@codemirror/lang-...` package name, open an [issue](https://github.com/codemirror/codemirror.next/issues) to ask for npm publish rights for that name.
